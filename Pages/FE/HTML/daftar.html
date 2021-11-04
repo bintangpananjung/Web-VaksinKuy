@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="FE/CSS/reset.css">
+    <link rel="stylesheet" href="FE/CSS/style-daftar.css">
+    <link rel="stylesheet" href="FE/CSS/style.css">
+    <link rel="icon" type="image/png" href="img/suntik.png">
+    <title>Daftar Vaksin - VaksinKuy</title>
+</head>
+<body>
+    <div class="konfirmasi">
+        <div class="container-konfirmasi">
+            <p>Apakah anda sudah yakin dengan semua data yang telah anda isi?</p>
+            <div class="cek">
+                <button id="ya">ya</button>
+                <button id="belum">belum</button>
+            </div>            
+        </div>
+    </div>
+    <div class="header">
+        
+    </div>
+    <div class="main">
+        <div class="main-header">
+            Formulir pendaftaran vaksin
+        </div>
+        <div class="main-container">
+            <form id="form" enctype="multipart/form-data">
+                <p><label for="nama">Nama Lengkap</label></p>                
+                <input type="text" name="nama" required>
+                <p><label for="nik">NIK</label></p>
+                <input type="text" name="nik" required>
+                <div class="ttl">
+                    <label for="kota" id="label-tempat">Tempat Lahir</label>
+                    <label for="tanggal" id="label-tanggal">Tanggal Lahir</label>
+                </div>
+                <div id="ttl">
+                    <input type="text" name="tempat" id="tempat" required>
+                    <input type="date" name="tanggal" id="tanggal" required>
+                </div>
+                <p><label for="alamat">Alamat</label></p>
+                <textarea name="alamat" required></textarea>
+                <p><label for="foto">Unggah Foto KTP/KK</label></p>
+                <label for="foto" class="custom-file-upload">
+                    <div class="foto-content">                        
+                        <p id="filename">format file: .jpg, .png, .jpeg</p> 
+                        <img src="img/attach.png" alt="" id="attach">
+                        <input id="foto" type="file" name="foto" required>
+                    </div>
+                </label>
+                
+                <input type="submit" id="submit" value="DAFTAR" style="height: 40px;">
+            </form>
+        </div>            
+    </div>
+</body>
+</html>
+<script src="FE/JS/template.js"></script>
+<script src="FE/JS/unggahfile.js"></script>
+<script src="FE/JS/kirim.js"></script>

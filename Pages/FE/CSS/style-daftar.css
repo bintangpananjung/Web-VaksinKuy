@@ -1,0 +1,215 @@
+body{
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+    background-color: #FAFBFD;
+}
+.main, .main-container, .main-header{
+    display: flex;
+}
+
+
+.main{
+    margin-top: 90px;
+    /* height: 500px; */
+    width: 600px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.main-header{
+    margin-top: 20px;
+    display: block;
+    background-color: #EC5863;
+    padding: 20px 100px;
+    color: white;
+    border-radius: 3px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    width: 95%;
+    margin: 20px 10px;
+}
+#form{
+    width: 100%;
+}
+#form p, .ttl{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#form input, #form textarea{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-size: 13px;
+}
+
+#form input{
+    height: 30px;
+}
+
+#form textarea{
+    height: 50px;
+    resize: none;
+}
+
+#form input[type=file]{
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+    /* align-items: center; */
+}
+#attach{
+    display: block;
+    border-left: 2px solid black;
+    height: 100%;
+    width: 30px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.foto-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Nunito';
+    box-sizing: border-box;
+    height: 100%;
+    /* align-items: center; */
+}
+
+.foto-content p{
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+#form input[type=submit]{
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Raleway';
+    color: white;
+    background-color:#EC5863;
+    padding: 10px;
+    letter-spacing: 2px;
+    display: block;
+    font-size: 15px;
+    transition: 300ms;
+}
+#form input[type=submit]:hover{
+    background-color: #d44852;
+}
+.ttl{
+    display: flex;
+    
+}
+#label-tempat{
+    display: block;
+    flex: 2;
+    width: 100%;
+}
+#label-tanggal{
+    display: block;
+    flex: 1;
+    width: 100%;
+}
+
+#ttl{
+    display: flex;
+}
+
+#tempat{
+    margin-right: 10px;
+    flex: 2;
+}
+#tanggal{
+    flex: 1;
+}
+
+.konfirmasi{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    transition: 1s;
+}
+
+.konfirmasi .container-konfirmasi{
+    display: flex;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 300px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #FAFBFD;
+    flex-direction: column;
+}
+
+.konfirmasi .container-konfirmasi p{
+    margin-top: 100px;
+}
+.cek{
+    width: 60%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ya, #belum{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    /* border: 2px solid black; */
+    font-family: 'Raleway';
+    color:white;
+    background-color: #EC5863;
+    border-radius: 3px;
+    transition: 100ms;
+}
+#ya:hover, #belum:hover{
+    background-color: #d44852;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+}
+.output p{
+    margin: 10px 30px;
+    font-size: 15px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: end;
+    margin: 20px 20px 5px 0;
+}

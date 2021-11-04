@@ -1,0 +1,145 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    display: flex;
+    margin-top: 60px;
+    
+    flex-direction: column;
+}
+.main-container{
+    width: 100%;
+    height: 555px;
+    font-family: 'Rubik';
+}
+
+.m1{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#heading1{
+    font-size: 33px;
+    font-weight: 800;
+}
+
+#sub-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(80, 79, 79);
+    margin-top: 10px;
+}
+#heading1 p{
+    margin-bottom: 5px;
+}
+#sub-heading p{
+    margin-bottom: 2px;
+}
+
+.mulai{
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 40px;
+    background-color: #EC5863;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.178);
+    transition: 100ms;
+}
+
+.mulai:hover{
+    background-color: #d44852;
+}
+
+.left1{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.left1 #sub-heading{
+    align-items: flex-start;
+}
+.right1{
+    background-color: #EC5863;
+    margin-top: 30px;
+    border-radius: 70px 0 0 70px;
+    width: 300px;
+    display: block;
+    height: 500px;
+}
+
+.m2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFBFD;
+}
+.top1{
+    margin-top: 50px;
+}
+
+.top1, .top1 #sub-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.bot-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 300px;
+    background-color: white;
+    margin: 10px 100px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.219);
+    border-radius: 8px;
+    font-family: 'Rubik';
+    text-decoration: none;
+    color: black;
+    transition: 50ms;
+}
+.bot-content:hover{
+    scale: 1.01;
+}
+
+.bot-content img{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#img1{
+    height: 90px;
+    width: 90px;
+}
+#img2{
+    height: 90px;
+    width: 60px;
+}
+
+.sub-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#heading2{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
