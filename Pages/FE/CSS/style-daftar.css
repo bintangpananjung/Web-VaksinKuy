@@ -110,6 +110,7 @@ body{
     cursor: pointer;
     margin-top: 20px;
     font-family: 'Raleway';
+    font-weight: 800;
     color: white;
     background-color:#EC5863;
     padding: 10px;
@@ -212,4 +213,12 @@ body{
     display: flex;
     justify-content: end;
     margin: 20px 20px 5px 0;
+}
+
+#jenis{
+    flex: 2;
+    margin-right: 10px;
+    border: 2px solid black;
+    font-family: 'Nunito';
+    font-weight: 500;
 }

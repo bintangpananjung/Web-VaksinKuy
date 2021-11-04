@@ -13,33 +13,29 @@ document.getElementById('form').addEventListener('submit',function(e){
     e.preventDefault()
     document.getElementsByClassName('konfirmasi')[0].style.display = 'flex';
     let nama = document.getElementsByName('nama')[0].value
-    let kode = document.getElementsByName('kode')[0].value
-    let jenis = document.getElementsByName('jenis')[0].value
+    let nik = document.getElementsByName('nik')[0].value
+    let tempat = document.getElementsByName('tempat')[0].value
     let tanggal = document.getElementsByName('tanggal')[0].value
-    let syarat = document.getElementsByName('syarat')[0].value
     let alamat = document.getElementsByName('alamat')[0].value
-    let kuota = document.getElementsByName('kuota')[0].value
     let foto = document.getElementById('foto').files[0]
     let formdata = new FormData()
     formdata.append('foto',foto)
     formdata.append('nama',nama)
-    formdata.append('kode',kode)
-    formdata.append('jenis',jenis)
+    formdata.append('nik',nik)
+    formdata.append('tempat',tempat)
     formdata.append('tanggal',tanggal)
-    formdata.append('syarat',syarat)
     formdata.append('alamat',alamat)
-    formdata.append('kuota',kuota)
 
     // let tiket = makeid(10)
     document.getElementById('ya').addEventListener('click', function(a){
         // window.location.href = `tiket.php?nama=${nama}&nik=${nik}&tiket=${tiket}`
-        fetch(`PHP/BE/unggahbackend.php`,{
+        fetch(`PHP/BE/daftarbackend.php`,{
             method: "POST",
             body:formdata
         }).then(res=>res.json())
         .then(res=>{
             if(res.code===200){                    
-                window.location.href = `datavaksin.php?IDlembaga=${res.IDlembaga}`
+                window.location.href = `tiket.php?IDpendaftaran=${res.IDpendaftaran}`
             }
             else{
                 console.log("gagal")
