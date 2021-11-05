@@ -15,9 +15,17 @@
     <title>Unggah Informasi Vaksin - VaksinKuy</title>
 </head>
 <body>
-    <div class="header">
-
+    <div class="konfirmasi">
+        <div class="container-konfirmasi">
+            <p>Apakah anda sudah yakin dengan semua data yang telah anda isi?</p>
+            <div class="cek">
+                <button id="ya">ya</button>
+                <button id="belum">belum</button>
+            </div>            
+        </div>
     </div>
+    <div class="header"></div>
+    <div id="nav"></div>
     <div class="main">
         <div class="main-header">
             Formulir Penyebaran Informasi Vaksin
@@ -55,11 +63,11 @@
                 <p><label for="kuota">Jumlah Kuota Pendaftaran</label></p>                
                 <input type="text" name="kuota" required> 
                 <p><label for="foto">Unggah Foto/Dokumen Izin Vaksin</label></p>
-                <label for="info" class="custom-file-upload">
+                <label for="foto" class="custom-file-upload">
                     <div class="foto-content">                        
                         <p id="filename">format file: .jpg, .png, .jpeg, .pdf</p> 
                         <img src="img/attach.png" alt="" id="attach">
-                        <input id="foto" type="file" name="info">
+                        <input id="foto" type="file" name="foto">
                     </div>
                 </label>
                 
@@ -73,3 +81,4 @@
 
 <script src="FE/JS/template.js"></script>
 <script src="FE/JS/unggahfile.js"></script>
+<script src="FE/JS/kirim.js"></script>

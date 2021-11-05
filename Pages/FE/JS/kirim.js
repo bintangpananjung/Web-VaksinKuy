@@ -30,9 +30,7 @@ document.getElementById('form').addEventListener('submit',function(e){
     formdata.append('alamat',alamat)
     formdata.append('kuota',kuota)
 
-    // let tiket = makeid(10)
     document.getElementById('ya').addEventListener('click', function(a){
-        // window.location.href = `tiket.php?nama=${nama}&nik=${nik}&tiket=${tiket}`
         fetch(`PHP/BE/unggahbackend.php`,{
             method: "POST",
             body:formdata

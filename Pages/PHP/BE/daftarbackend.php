@@ -22,7 +22,7 @@
         $lastID = $db->query("select max(IDpendaftaran) as lastID from pendaftaran")->fetchAll()[0]['lastID'] + 1;
         // kode pendaftaran
         $tiket = "{$tiket}-{$lastID}";
-        $dir = "img/pendaftaran/";
+        $dir = "../../img/pendaftaran/";
         $namafoto = $_FILES["foto"]["name"];
         $tmp =explode(".",$namafoto);
         $ext = end($tmp);        

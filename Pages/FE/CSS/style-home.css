@@ -5,11 +5,11 @@ html{
 .main{
     display: flex;
     margin-top: 60px;
-    
+    align-items: center;
     flex-direction: column;
 }
 .main-container{
-    width: 100%;
+    width: 1350px;
     height: 555px;
     font-family: 'Rubik';
 }
@@ -85,6 +85,7 @@ html{
 }
 .top1{
     margin-top: 50px;
+    text-align: center;
 }
 
 .top1, .top1 #sub-heading{
@@ -116,7 +117,8 @@ html{
     transition: 50ms;
 }
 .bot-content:hover{
-    scale: 1.01;
+    scale: 1.005;
+    color: #EC5863;
 }
 
 .bot-content img{
@@ -143,3 +145,47 @@ html{
     font-size: 16px;
     margin-bottom: 5px;
 }
+
+@media screen and (max-width:957px){
+    .main-container{
+        width: 100%;
+    }
+    .right1{
+        display: none;
+    }
+    .left1{
+        margin-left: 0;
+        text-align: center;
+    }
+    .left1 #sub-heading{        
+        align-items: center;
+    }
+    .m1{
+        justify-content: center;
+    }
+    .bottom1{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1350px){
+    .main-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #heading1{
+        font-size: 25px;
+    }
+    #heading2{
+        font-size: 12px;
+    }
+    .mulai{
+        font-size: 11px;
+    }#sub-heading{
+        font-size: 9px;
+    }
+}
+

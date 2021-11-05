@@ -9,7 +9,7 @@ body{
 
 
 .main{
-    margin-top: 90px;
+    margin-top: 60px;
     /* height: 500px; */
     width: 600px;
     display: flex;
@@ -31,6 +31,7 @@ body{
     padding: 20px 100px;
     color: white;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .main-container{
@@ -108,7 +109,7 @@ body{
 
 #form input[type=submit]{
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Raleway';
     font-weight: 800;
     color: white;
@@ -191,6 +192,7 @@ body{
     border: none;
     /* border: 2px solid black; */
     font-family: 'Raleway';
+    font-weight: 700;
     color:white;
     background-color: #EC5863;
     border-radius: 3px;
@@ -221,4 +223,16 @@ body{
     border: 2px solid black;
     font-family: 'Nunito';
     font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+    .main{
+        width: 100%;
+        box-shadow: none;
+    }
+    .main-header{
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
 }
