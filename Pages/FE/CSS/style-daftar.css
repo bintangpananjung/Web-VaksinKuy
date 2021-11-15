@@ -9,7 +9,7 @@ body{
 
 
 .main{
-    margin-top: 60px;
+    margin-top: 90px;
     /* height: 500px; */
     width: 600px;
     display: flex;
@@ -229,10 +229,12 @@ body{
     .main{
         width: 100%;
         box-shadow: none;
+        margin-top: 60px;
     }
     .main-header{
         width: 100%;
         padding: 20px 0;
         text-align: center;
+        border-radius: 0;
     }
 }

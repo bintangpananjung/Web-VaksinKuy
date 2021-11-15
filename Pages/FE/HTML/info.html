@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="FE/CSS/reset.css">
+    <link rel="stylesheet" href="FE/CSS/style.css">
+    <link rel="stylesheet" href="FE/CSS/style-info.css">
+    <link rel="icon" type="image/png" href="img/suntik.png">
+    <title>Cari Informasi Vakisn - VaksinKuy</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div id="nav"></div>
+    <div class="main">
+        <form id="form">
+            <div class="searchbar">            
+                <div class="search-content">
+                    <p id="kota"><label for="kota">Kota</label></p>
+                    <p id="jenis"><label for="jenis">Jenis Vaksin</label></p>            
+                    <p id="mulai"><label for="mulai">Tanggal Mulai</label></p>                
+                    <p id="sampai"><label for="sampai">Tanggal Akhir</label></p>                
+                </div>
+                <div class="search-content">                
+                    <input type="text" name="kota" id="kota" list="list-kota">
+                    <datalist id="list-kota"></datalist>                
+                    <input type="text" name="jenis" id="jenis" list="list-jenis">
+                    <datalist id="list-jenis">
+                        <option value="Sinovac">Sinovac</option>
+                        <option value="Sinopharm">Sinopharm</option>
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Moderna">Moderna</option>
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="Novavax">Novavax</option>
+                        <option value="Sputnik-V">Sputnik-V</option>
+                        <option value="Janssen">Janssen</option>
+                        <option value="Convidencia">Convidencia</option>
+                        <option value="Zifivax">Zifivax</option>
+                    </datalist>
+                    <datalist id="list-jenis"></datalist>                
+                    <input type="date" name="mulai" id="mulai">                
+                    <input type="date" name="sampai" id="sampai">                                
+                </div>
+                
+            </div>
+            <input type="image" name="submit" id="submit" src="img/search.png" alt="">        
+        </form>
+        <div class="main-content">
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="FE/JS/template.js"></script>
+<script src="FE/JS/info.js"></script>
+

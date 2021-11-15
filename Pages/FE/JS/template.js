@@ -6,8 +6,8 @@ let header = `<div class="header-wrap">
                 </a>
                 <button id="navbar" onclick="opennavbar()"><img src="img/navbar.png" alt="" style="height: 30px; width: 30px;"></button>
                 <div class="header-right">
-                    <a id="info" href="#">Informasi Vaksin</a>
-                    <a id="unggah" href="#">Unggah Informasi</a>
+                    <a id="info" href="info.php">Informasi Vaksin</a>
+                    <a id="unggah" href="penyedia.php">Unggah Informasi</a>
                 </div>                
             </div>`
 document.getElementsByClassName('header')[0].innerHTML = header

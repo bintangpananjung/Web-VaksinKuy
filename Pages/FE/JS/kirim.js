@@ -14,7 +14,7 @@ document.getElementById('form').addEventListener('submit',function(e){
     document.getElementsByClassName('konfirmasi')[0].style.display = 'flex';
     let nama = document.getElementsByName('nama')[0].value
     let kode = document.getElementsByName('kode')[0].value
-    let jenis = document.getElementsByName('jenis')[0].value
+    let jenis = document.getElementsByName('jenis')[0].value.toLowerCase()
     let tanggal = document.getElementsByName('tanggal')[0].value
     let syarat = document.getElementsByName('syarat')[0].value
     let alamat = document.getElementsByName('alamat')[0].value
