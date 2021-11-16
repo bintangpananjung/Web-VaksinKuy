@@ -22,13 +22,18 @@
     display: block;   
 }
 input{
-    border: 2px solid black;
+    /* all: unset; */
+    border: none;
+    border-bottom: 2px solid black;
     border-radius: 0px;
     box-sizing: border-box;
     height: 25px;
     font-family: 'Nunito';
     font-size: 14px;
     width: 0px;
+}
+input:focus{
+    border: none;
 }
 input[type=date]{
     box-sizing: border-box;
@@ -38,6 +43,10 @@ input[type=date]{
 }
 #kota,#jenis{
     flex: 3;
+}
+#kota,#jenis,#mulai{
+    border-right: none;
+    margin-right: 15px;
 }
 #sampai,#mulai{
     flex: 2;

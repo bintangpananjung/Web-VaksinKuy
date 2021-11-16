@@ -17,7 +17,11 @@ html{
 .m1{
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-image: url("../../img/background1.jpg");
+    box-shadow: inset 0 0 0 1000px  rgba(255, 255, 255, 0.8);
+    background-size: 1368px;
+    background-position-y: -900px;
+    background-repeat: no-repeat;
 }
 
 #heading1{

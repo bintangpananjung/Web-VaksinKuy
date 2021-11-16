@@ -1,9 +1,12 @@
 <?php
     try{
-        $search = $_GET['search'];
-        $offset = ($_GET['page']-1)*5;
+        $kota = $_GET['kota'];
+        $jenis = $_GET['jenis'];
+        $awal = $_GET['awal'];
+        $akhir = $_GET['akhir'];
+        $offset = ((int)$_GET['page']-1)*5;
         $db = new PDO('sqlite:../../DB/database.sqlite3');
-        $data = $db->query("select * from lembaga limit $offset, 5;")->fetchAll();
+        $data = $db->query("select * from lembaga where lower(jenis) like '%$jenis%' and lower(alamat) like '%$kota%' and tanggal <= '$akhir' and tanggal >= '$awal' limit $offset, 5;")->fetchAll();
         if(count($data)!=0){
             http_response_code(200);
             echo(json_encode(
