@@ -22,25 +22,28 @@ fetch(`PHP/BE/getinfo.php?kota=${kota}&jenis=${jenis}&awal=${awal}&akhir=${akhir
     if(res.code === 200){
         var text = ""
         res.data.forEach((item,index)=>{        
-            text = text.concat(`<div class="content">
-                        <img src="img/hospital.png" alt="">                
-                        <div class="sub-content">
-                            <p>${item.nama}</p>
-                            <div class="sub-detail">
-                                <p>${item.alamat}</p>
-                                <p>Jenis Vaksin : ${item.jenis}</p>
+            text = text.concat(`<div class="box-container">
+                            <div class="content">
+                            <img src="img/hospital.png" alt="">                
+                            <div class="sub-content">
+                                <p>${item.nama}</p>
+                                <div class="sub-detail">
+                                    <p id="sub1">${item.alamat}</p>
+                                    <p id="sub2">Jenis Vaksin : ${item.jenis}</p>
+                                </div>
+                                <div class="sub-detail">
+                                    <p id="sub1">Jumlah Kuota : ${item.kuota}</p>
+                                    <p id="sub2">Kuota Tersedia : ${item.kuota-item.pendaftar}</p>                        
+                                </div>                
+                                <div class="sub-detail">                        
+                                    <p id="sub1">Syarat : ${item.syarat}</p>
+                                    <p id="sub2">Tanggal : ${item.tanggal}</p>
+                                </div>                
                             </div>
-                            <div class="sub-detail">
-                                <p>Jumlah Kuota : ${item.kuota}</p>
-                                <p>Kuota Tersedia : ${item.kuota-item.pendaftar}</p>                        
-                            </div>                
-                            <div class="sub-detail">                        
-                                <p>Syarat : ${item.syarat}</p>
-                                <p>Tanggal : ${item.tanggal}</p>
-                            </div>                
+                            <a id="daftar" href="daftar.php?IDlembaga=${item.IDlembaga}">DAFTAR</a>
                         </div>
-                        <a href="daftar.php?IDlembaga=${item.IDlembaga}">DAFTAR</a>
-                    </div>`)                    
+                        <a id="daftar1" href="daftar.php?IDlembaga=${item.IDlembaga}">DAFTAR</a>
+                    </div>`)
         })
         document.getElementsByClassName('main-content')[0].innerHTML = text
     }

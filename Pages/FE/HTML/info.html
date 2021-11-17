@@ -21,15 +21,15 @@
         <form id="form">
             <div class="searchbar">            
                 <div class="search-content">
-                    <p id="kota"><label for="kota">Kota</label></p>
+                    <p id="kota"><label for="kota">Kota/Kabupaten</label></p>
                     <p id="jenis"><label for="jenis">Jenis Vaksin</label></p>            
                     <p id="mulai"><label for="mulai">Tanggal Mulai</label></p>                
                     <p id="sampai"><label for="sampai">Tanggal Akhir</label></p>                
                 </div>
                 <div class="search-content">                
-                    <input type="text" name="kota" id="kota" list="list-kota">
+                    <input type="text" name="kota" id="kota" list="list-kota"  placeholder="Kota/Kabupaten">
                     <datalist id="list-kota"></datalist>                
-                    <input type="text" name="jenis" id="jenis" list="list-jenis">
+                    <input type="text" name="jenis" id="jenis" list="list-jenis" placeholder="Jenis Vaksin">
                     <datalist id="list-jenis">
                         <option value="Sinovac">Sinovac</option>
                         <option value="Sinopharm">Sinopharm</option>
@@ -43,12 +43,13 @@
                         <option value="Zifivax">Zifivax</option>
                     </datalist>
                     <datalist id="list-jenis"></datalist>                
-                    <input type="date" name="mulai" id="mulai">                
-                    <input type="date" name="sampai" id="sampai">                                
+                    <input type="text" name="mulai" id="mulai" placeholder="Tanggal Mulai" onfocus="(this.type = 'date')" onblur="(this.type='text')" on>
+                    <input type="text" name="sampai" id="sampai" placeholder="Tanggal Akhir" onfocus="(this.type = 'date')" onblur="(this.type='text')">
                 </div>
                 
             </div>
             <input type="image" name="submit" id="submit" src="img/search.png" alt="">        
+            <input type="submit" name="submit" id="submit1" value="CARI VAKSIN">
         </form>
         <div class="main-content">
             
@@ -56,6 +57,7 @@
     </div>
 </body>
 </html>
+
 
 <script src="FE/JS/template.js"></script>
 <script src="FE/JS/info.js"></script>

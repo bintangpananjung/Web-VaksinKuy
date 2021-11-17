@@ -16,16 +16,16 @@ document.getElementById('form').addEventListener('submit',e=>{
                             <div class="sub-content">
                                 <p>${item.nama}</p>
                                 <div class="sub-detail">
-                                    <p>${item.alamat}</p>
-                                    <p>Jenis Vaksin : ${item.jenis}</p>
+                                    <p id="sub1">${item.alamat}</p>
+                                    <p id="sub2">Jenis Vaksin : ${item.jenis}</p>
                                 </div>
                                 <div class="sub-detail">
-                                    <p>Jumlah Kuota : ${item.kuota}</p>
-                                    <p>Kuota Tersedia : ${item.kuota-item.pendaftar}</p>                        
+                                    <p id="sub1">Jumlah Kuota : ${item.kuota}</p>
+                                    <p id="sub2">Kuota Tersedia : ${item.kuota-item.pendaftar}</p>                        
                                 </div>                
                                 <div class="sub-detail">                        
-                                    <p>Syarat : ${item.syarat}</p>
-                                    <p>Tanggal : ${item.tanggal}</p>
+                                    <p id="sub1">Syarat : ${item.syarat}</p>
+                                    <p id="sub2">Tanggal : ${item.tanggal}</p>
                                 </div>                
                             </div>
                             <a href="daftar.php?IDlembaga=${item.IDlembaga}">DAFTAR</a>
