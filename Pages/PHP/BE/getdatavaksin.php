@@ -18,7 +18,8 @@
                             "syarat"=>$data[0]['syarat'],
                             "tanggal"=>$data[0]['tanggal'],
                             "alamat"=>$data[0]['alamat'],
-                            "kuota"=>$data[0]['kuota']
+                            "kuota"=>$data[0]['kuota'],
+                            "pendaftar"=>$data[0]['pendaftar']
                         ]
                     ]
                 ));

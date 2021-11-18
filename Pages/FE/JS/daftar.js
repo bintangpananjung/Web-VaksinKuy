@@ -8,6 +8,35 @@
 //    }
 //    return result;
 // }
+let url_str = window.location.href;
+
+let url = new URL(url_str);
+let search_params = url.searchParams;
+
+const ID = search_params.get('IDlembaga')
+fetch('PHP/BE/getdatavaksin.php',{
+    method:"POST",
+    headers:{
+        "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+        IDlembaga :ID
+    })
+}).then(res=>res.json())
+.then(res=>{
+    if(res.code===200){
+        console.log('yes')
+        document.getElementById('nama-v').innerHTML ="Nama Lembaga : " + res.data.nama
+        document.getElementById('jenis-v').innerHTML ="Jenis Vaksin : " + res.data.jenis
+        document.getElementById('tanggal-v').innerHTML ="Tanggal Pelaksanaan" + res.data.tanggal
+        document.getElementById('syarat-v').innerHTML ="Syarat-syarat : " + res.data.syarat
+        document.getElementById('alamat-v').innerHTML = "Alamat Vaksinasi : " +res.data.alamat
+        document.getElementById('kuota-v').innerHTML = "Kuota Total : " +res.data.kuota
+        document.getElementById('sisa-v').innerHTML = "Kuota Tersisa : " + (res.data.kuota - res.data.pendaftar)
+    }
+})
+
+
 
 document.getElementById('form').addEventListener('submit',function(e){
     e.preventDefault()
