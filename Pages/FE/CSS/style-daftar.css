@@ -47,6 +47,7 @@ body{
     line-height: 19px;
     text-align: justify;
     margin-right: 20px;
+    
 }
 
 #syarat-v{
@@ -54,11 +55,11 @@ body{
 }
 
 .garis{
-    display: block;
-    width: 80%;
+    display: block;    
     height: 3px;
     background-color: #EC5863;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 5px;
 }
 .box-container{
@@ -291,16 +292,63 @@ body{
     font-weight: 500;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1070px) {
+    .main{
+        flex-direction: column;
+    }
+    .side-background{
+        align-items: flex-start;
+        justify-content: center;
+        width: 70%;
+        align-self: center;
+        height: fit-content;
+        border-radius: 0 0 8px 8px;
+    }
+    .side-content{         
+        border-radius: 0 0 5px 5px;
+        margin-top: 60px;
+        margin-right: 0;
+        width: 350px;        
+        margin-bottom: 30px;
+        background-color: white;
+        box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+    .box-container{
+        overflow: visible;
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    .main-content{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:870px) {
+    .side-background{
+        width: 600px;
+    }    
+}
+
+
+@media screen and (max-width:630px) {    
+    .side-background{
+        width: 100%;
+        border-radius: 0;        
+    }    
     .main-content{
         width: 100%;
         box-shadow: none;
-        margin-top: 60px;
+        margin-top: 10px;
     }
     .main-header{
         width: 100%;
         padding: 20px 0;
         text-align: center;
         border-radius: 0;
+    }
+}
+
+@media screen and (max-height:380px) {
+    .side-background{
+        height: 380px;
     }
 }

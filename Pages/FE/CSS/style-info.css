@@ -166,7 +166,7 @@ input[type=date]{
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .sub-detail #sub1{

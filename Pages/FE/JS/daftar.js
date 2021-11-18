@@ -26,13 +26,13 @@ fetch('PHP/BE/getdatavaksin.php',{
 .then(res=>{
     if(res.code===200){
         console.log('yes')
-        document.getElementById('nama-v').innerHTML ="Nama Lembaga : " + res.data.nama
-        document.getElementById('jenis-v').innerHTML ="Jenis Vaksin : " + res.data.jenis
-        document.getElementById('tanggal-v').innerHTML ="Tanggal Pelaksanaan" + res.data.tanggal
-        document.getElementById('syarat-v').innerHTML ="Syarat-syarat : " + res.data.syarat
-        document.getElementById('alamat-v').innerHTML = "Alamat Vaksinasi : " +res.data.alamat
-        document.getElementById('kuota-v').innerHTML = "Kuota Total : " +res.data.kuota
-        document.getElementById('sisa-v').innerHTML = "Kuota Tersisa : " + (res.data.kuota - res.data.pendaftar)
+        document.getElementById('nama-v').innerHTML ="Nama Lembaga : <span style='color: #d44852'>" + res.data.nama+ "</span>"
+        document.getElementById('jenis-v').innerHTML ="Jenis Vaksin : <span style='color: #d44852'>" + res.data.jenis+ "</span>"
+        document.getElementById('tanggal-v').innerHTML ="Tanggal Pelaksanaan : <span style='color: #d44852'>" + res.data.tanggal + "</span>"
+        document.getElementById('syarat-v').innerHTML ="Syarat-syarat : <span style='color: #d44852'>" + res.data.syarat+ "</span>"
+        document.getElementById('alamat-v').innerHTML = "Alamat Vaksinasi : <span style='color: #d44852'>" +res.data.alamat+ "</span>"
+        document.getElementById('kuota-v').innerHTML = "Kuota Total : <span style='color: #d44852'>" +res.data.kuota+ "</span>"
+        document.getElementById('sisa-v').innerHTML = "Kuota Tersisa : <span style='color: #d44852'>" + (res.data.kuota - res.data.pendaftar)+ "</span>"
     }
 })
 
@@ -77,3 +77,4 @@ document.getElementById('form').addEventListener('submit',function(e){
 
     
 })
+
