@@ -15,12 +15,12 @@ fetch('PHP/BE/getdatavaksin.php',{
 }).then(res=>res.json())
 .then(res=>{
     if(res.code===200){
-        document.getElementById('nama').innerHTML ='Nama Lengkap = ' + res.data.nama
+        document.getElementById('nama').innerHTML ='Nama Lengkap = ' + res.data.lembaga
         document.getElementById('kode').innerHTML ='Kode Lembaga = ' + res.data.kode
         document.getElementById('jenisvaksin').innerHTML ='Jenis Vaksin = ' + res.data.jenis
         document.getElementById('tanggal').innerHTML ='Tanggal Vaksin = ' + res.data.tanggal
         document.getElementById('syarat').innerHTML ='Syarat Vaksin = ' + res.data.syarat
-        document.getElementById('alamat').innerHTML ='Alamat Vaksin = ' + res.data.alamat
+        document.getElementById('alamat').innerHTML ='Alamat Vaksin = ' + res.data.alamatlembaga
         document.getElementById('kuota').innerHTML ='Kuota Vaksin = ' + res.data.kuota
     }
     else{

@@ -26,9 +26,9 @@ fetch(`PHP/BE/getinfo.php?kota=${kota}&jenis=${jenis}&awal=${awal}&akhir=${akhir
                             <div class="content">
                             <img src="img/hospital.png" alt="">                
                             <div class="sub-content">
-                                <p>${item.nama}</p>
+                                <p>${item.lembaga}</p>
                                 <div class="sub-detail">
-                                    <p id="sub1">${item.alamat}</p>
+                                    <p id="sub1">${item.alamatlembaga}</p>
                                     <p id="sub2">Jenis Vaksin : ${item.jenis}</p>
                                 </div>
                                 <div class="sub-detail">

@@ -15,12 +15,11 @@ fetch('PHP/BE/gettiket.php',{
 }).then(res=>res.json())
 .then(res=>{
     if(res.code===200){
-        document.getElementById('nama').innerHTML ='Nama Lengkap = ' + res.data.nama
-        document.getElementById('nik').innerHTML ='NIK = ' + res.data.nik
-        document.getElementById('tiket').innerHTML ='Kode Pendaftaran = ' + res.data.tiket
+        document.getElementById('nama').innerHTML ='Nama Lengkap : ' + res.data.nama
+        document.getElementById('nik').innerHTML ='NIK : ' + res.data.nik
+        document.getElementById('tiket').innerHTML ='Kode Pendaftaran : ' + res.data.tiket
+        document.getElementById('lembaga').innerHTML = 'Tempat Vaksin : ' + res.data.lembaga
     }
-    else{
-        window.location.href = "daftar.php"
-    }
+    
 })
 

@@ -12,12 +12,12 @@
                         "code"=>200,
                         "pesan"=>"data ada",
                         "data"=>[
-                            "nama"=>$data[0]['nama'],
+                            "nama"=>$data[0]['lembaga'],
                             "kode"=>$data[0]['kode'],
                             "jenis"=>$data[0]['jenis'],
                             "syarat"=>$data[0]['syarat'],
                             "tanggal"=>$data[0]['tanggal'],
-                            "alamat"=>$data[0]['alamat'],
+                            "alamat"=>$data[0]['alamatlembaga'],
                             "kuota"=>$data[0]['kuota'],
                             "pendaftar"=>$data[0]['pendaftar']
                         ]

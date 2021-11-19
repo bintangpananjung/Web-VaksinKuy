@@ -40,6 +40,7 @@ fetch('PHP/BE/getdatavaksin.php',{
 
 document.getElementById('form').addEventListener('submit',function(e){
     e.preventDefault()
+    console.log(ID)
     document.getElementsByClassName('konfirmasi')[0].style.display = 'flex';
     let nama = document.getElementsByName('nama')[0].value
     let nik = document.getElementsByName('nik')[0].value
@@ -54,7 +55,7 @@ document.getElementById('form').addEventListener('submit',function(e){
     formdata.append('tempat',tempat)
     formdata.append('tanggal',tanggal)
     formdata.append('alamat',alamat)
-
+    formdata.append('IDlembaga',ID)
     // let tiket = makeid(10)
     document.getElementById('ya').addEventListener('click', function(a){
         // window.location.href = `tiket.php?nama=${nama}&nik=${nik}&tiket=${tiket}`

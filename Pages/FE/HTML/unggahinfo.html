@@ -27,54 +27,57 @@
     <div class="header"></div>
     <div id="nav"></div>
     <div class="main">
-        <div class="main-content">
-            <div class="main-header">
-                Formulir Penyebaran Informasi Vaksin
-            </div>
-            <div class="main-container">
-                <form id="form" enctype="multipart/form-data">
-                    <p><label for="nama">Nama Lembaga</label></p>                
-                    <input type="text" name="nama" required>                
-                    <p><label for="kode">Kode Lembaga</label></p>                
-                    <input type="text" name="kode" required>  
-                    <div class="ttl">
-                        <label for="jenis" id="label-tempat">Jenis Vaksin</label>
-                        <label for="tanggal" id="label-tanggal">Tanggal Vaksinasi</label>
-                    </div>
-                    <div id="ttl">
-                        <input type="text" name="jenis" id="tempat" list="jenis" required>
-                        <datalist id="jenis">
-                            <option value="Sinovac">Sinovac</option>
-                            <option value="Sinopharm">Sinopharm</option>
-                            <option value="AstraZeneca">AstraZeneca</option>
-                            <option value="Moderna">Moderna</option>
-                            <option value="Pfizer">Pfizer</option>
-                            <option value="Novavax">Novavax</option>
-                            <option value="Sputnik-V">Sputnik-V</option>
-                            <option value="Janssen">Janssen</option>
-                            <option value="Convidencia">Convidencia</option>
-                            <option value="Zifivax">Zifivax</option>
-                        </datalist>
-                        <input type="date" name="tanggal" id="tanggal" required>
-                    </div>
-                    <p><label for="syarat">Syarat-syarat</label></p>
-                    <textarea name="syarat" required></textarea>
-                    <p><label for="alamat">Alamat Lokasi Vaksinasi</label></p>
-                    <textarea name="alamat" required></textarea>
-                    <p><label for="kuota">Jumlah Kuota Pendaftaran</label></p>                
-                    <input type="text" name="kuota" required> 
-                    <p><label for="foto">Unggah Foto/Dokumen Izin Vaksin</label></p>
-                    <label for="foto" class="custom-file-upload">
-                        <div class="foto-content">                        
-                            <p id="filename">format file: .jpg, .png, .jpeg, .pdf</p> 
-                            <img src="img/attach.png" alt="" id="attach">
-                            <input id="foto" type="file" name="foto">
+        <div class="dummy-block"></div>
+        <div class="box-container1">        
+            <div class="main-content">
+                <div class="main-header">
+                    Formulir Penyebaran Informasi Vaksin
+                </div>
+                <div class="main-container">
+                    <form id="form" enctype="multipart/form-data">
+                        <p><label for="nama">Nama Lembaga</label></p>                
+                        <input type="text" name="nama" required>                
+                        <p><label for="kode">Kode Lembaga</label></p>                
+                        <input type="text" name="kode" required>  
+                        <div class="ttl">
+                            <label for="jenis" id="label-tempat">Jenis Vaksin</label>
+                            <label for="tanggal" id="label-tanggal">Tanggal Vaksinasi</label>
                         </div>
-                    </label>                    
-                    <input type="submit" id="submit" value="KIRIM" style="height: 40px;">
-                </form>
-            </div> 
-        </div>        
+                        <div id="ttl">
+                            <input type="text" name="jenis" id="tempat" list="jenis" required>
+                            <datalist id="jenis">
+                                <option value="Sinovac">Sinovac</option>
+                                <option value="Sinopharm">Sinopharm</option>
+                                <option value="AstraZeneca">AstraZeneca</option>
+                                <option value="Moderna">Moderna</option>
+                                <option value="Pfizer">Pfizer</option>
+                                <option value="Novavax">Novavax</option>
+                                <option value="Sputnik-V">Sputnik-V</option>
+                                <option value="Janssen">Janssen</option>
+                                <option value="Convidencia">Convidencia</option>
+                                <option value="Zifivax">Zifivax</option>
+                            </datalist>
+                            <input type="date" name="tanggal" id="tanggal" required>
+                        </div>
+                        <p><label for="syarat">Syarat-syarat</label></p>
+                        <textarea name="syarat" required></textarea>
+                        <p><label for="alamat">Alamat Lokasi Vaksinasi</label></p>
+                        <textarea name="alamat" required></textarea>
+                        <p><label for="kuota">Jumlah Kuota Pendaftaran</label></p>                
+                        <input type="text" name="kuota" required> 
+                        <p><label for="foto">Unggah Foto/Dokumen Izin Vaksin</label></p>
+                        <label for="foto" class="custom-file-upload">
+                            <div class="foto-content">                        
+                                <p id="filename">format file: .jpg, .png, .jpeg, .pdf</p> 
+                                <img src="img/attach.png" alt="" id="attach">
+                                <input id="foto" type="file" name="foto">
+                            </div>
+                        </label>                    
+                        <input type="submit" id="submit" value="KIRIM" style="height: 40px;">
+                    </form>
+                </div> 
+            </div>  
+        </div>              
     </div>    
 </body>
 </html>

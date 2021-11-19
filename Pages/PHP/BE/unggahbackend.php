@@ -20,7 +20,7 @@
         $ext = end($tmp);        
         $foto = "{$dir}{$lastID}.{$ext}";
         move_uploaded_file($_FILES["foto"]["tmp_name"],$foto);
-        $db->exec("insert into lembaga(nama, kode, jenis, tanggal, syarat, alamat, kuota, dokumen) values('$nama','$kode','$jenis','$tanggal','$syarat','$alamat','$kuota','$foto');");
+        $db->exec("insert into lembaga(lembaga, kode, jenis, tanggal, syarat, alamatlembaga, kuota, dokumen) values('$nama','$kode','$jenis','$tanggal','$syarat','$alamat','$kuota','$foto');");
         http_response_code(200);
         echo(json_encode(
             [

@@ -14,6 +14,7 @@
     $tempat = $_POST['tempat'];
     $tanggal = $_POST['tanggal'];
     $alamat = $_POST['alamat'];
+    $IDlembaga = $_POST['IDlembaga'];
     // var_dump($_POST);
     $tiket = generateRandomString(10);
     
@@ -28,7 +29,7 @@
         $ext = end($tmp);        
         $foto = "{$dir}{$tiket}.{$ext}";
         move_uploaded_file($_FILES["foto"]["tmp_name"],$foto);
-        $db->exec("insert into pendaftaran(nama, nik, tempatlahir, tanggallahir, alamat, foto, tiket) values('$nama','$nik','$tempat','$tanggal','$alamat','$foto','$tiket');");
+        $db->exec("insert into pendaftaran(nama, nik, tempatlahir, tanggallahir, alamat, foto, tiket, IDlembaga) values('$nama','$nik','$tempat','$tanggal','$alamat','$foto','$tiket','$IDlembaga');");
         http_response_code(200);
         echo(json_encode(
             [

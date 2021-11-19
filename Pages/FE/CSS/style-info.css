@@ -203,7 +203,7 @@ input[type=date]{
         display: flex;
         align-items: center;
         justify-content: center;        
-        margin: 5px 15px 10px 15px;
+        margin: 5px 15px 15px 15px;
         border-radius: 3px;
         padding: 12px;
         box-sizing: border-box;
@@ -212,6 +212,7 @@ input[type=date]{
         background-color: white;
         font-weight: 800;
         letter-spacing: 2px;
+        
     }
     #daftar1:hover{
         color:#EC5863;
